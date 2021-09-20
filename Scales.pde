@@ -1,7 +1,7 @@
 int x, y, addAmt;
 
 void setup() {
-  background(random(255));
+  background((float) Math.random() * 255);
   size(500, 500);  //feel free to change the size
   noLoop(); //stops the draw() function from repeating
   x = 0;
@@ -20,7 +20,7 @@ void draw()
 }
 void scale(int x, int y)
 {
-  fill(random(255), random(255), random(255));
+  fill((float) Math.random() * 255, (float) Math.random() * 255, (float) Math.random() * 255);
   if(x % 2 == 0 && y % 2 == 0)
   {
     fill(255, 0, 0);
